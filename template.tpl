@@ -29,7 +29,28 @@ ___INFO___
 
 ___TEMPLATE_PARAMETERS___
 
-[]
+[
+  {
+    "type": "SELECT",
+    "name": "fbApiVersion",
+    "displayName": "Facebook API version",
+    "macrosInSelect": true,
+    "selectItems": [
+      {
+        "value": "v9.0",
+        "displayValue": "v9.0"
+      },
+      {
+        "value": "v10.0",
+        "displayValue": "v10.0"
+      }
+    ],
+    "simpleValueType": true,
+    "alwaysInSummary": true,
+    "defaultValue": "v10.0",
+    "help": "Choose the Facebook API version. In case of doubt, use the default option."
+  }
+]
 
 
 ___SANDBOXED_JS_FOR_SERVER___
@@ -40,7 +61,7 @@ const sendMessage = require('sendMessage');
 const JSON = require('JSON');
 
 const event = getAllEventData();
-const requestUrl = 'https://graph.facebook.com/v9.0/' + event.pixel_id + '/events?access_token=' + event.access_token;
+const requestUrl = 'https://graph.facebook.com/' + data.fbApiVersion + '/' + event.pixel_id + '/events?access_token=' + event.access_token;
 
 sendHttpRequest(requestUrl, (statusCode, headers, body) => {
     const result = {
@@ -166,6 +187,6 @@ scenarios: []
 
 ___NOTES___
 
-Version 0.2
+Version 0.3
 
 
