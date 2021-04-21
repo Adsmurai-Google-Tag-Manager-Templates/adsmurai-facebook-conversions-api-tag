@@ -15,5 +15,10 @@
 homepage: "https://www.adsmurai.com"
 documentation: "https://www.example.com/documentation"
 versions:
+  # Latest version
+  - sha: 533fa1fbe8bda3360c512a9ca8c8fe81a251fcbe
+    changeNotes: v0.3
+      Add option to change Facebook's API version
+  # Older versions
   - sha: e6a0f00eda1d1111f8bda41bf3a499302a41462c
     changeNotes: Initial release (0.2)
