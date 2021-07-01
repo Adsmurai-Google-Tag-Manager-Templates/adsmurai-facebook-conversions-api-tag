@@ -43,11 +43,15 @@ ___TEMPLATE_PARAMETERS___
       {
         "value": "v10.0",
         "displayValue": "v10.0"
+      },
+      {
+        "value": "v11.0",
+        "displayValue": "v11.0"
       }
     ],
     "simpleValueType": true,
     "alwaysInSummary": true,
-    "defaultValue": "v10.0",
+    "defaultValue": "v11.0",
     "help": "Choose the Facebook API version. In case of doubt, use the default option."
   }
 ]
@@ -188,5 +192,3 @@ scenarios: []
 ___NOTES___
 
 Version 0.3
-
-
