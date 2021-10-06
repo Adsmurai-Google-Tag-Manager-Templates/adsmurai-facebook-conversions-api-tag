@@ -7,7 +7,7 @@ This Google Tag Manager custom tag for server containers helps with sending even
 This template is not available on the Community Template Gallery yet, so it has to be installed manually following these instructions:
 - Download "template.tpl" from this repository.
 - Open your GTM server container and click on "Templates".
-- On "Client Templates", click "New".
+- On "Tag Templates", click "New".
 - Click on the three dots in the top right corner, and then "Import".
 - Open the file you downloaded on the first step.
 - Once the importing is done, click "Save" and close the modal.
