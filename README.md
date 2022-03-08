@@ -14,7 +14,15 @@ This template is not available on the Community Template Gallery yet, so it has 
 
 ## How it works
 
-This tag doesn't require any additional configuration, because all the set up is done on the Adsmurai Facebook Conversions API Client custom tag. However, you can change the Facebook Graph's API version to be used, if you want or need to.
+On GTM server
+
+1. [Setup this client](https://github.com/Adsmurai-Google-Tag-Manager-Templates/adsmurai-facebook-conversions-api-client) and name it `Facebook CAPI client`. 
+2. Create a new trigger with `Custom` (Not `Custom event`) type and rule it to fire when: Client name -> equals -> `Facebook CAPI client`.
+3. Set the tag with the above trigger.
+
+* Notice that `Facebook CAPI client` can be any name as long is the same in the Client and Tag trigger (Server container). Actually the point is to correlate the Client name with the trigger. You could use any operator other than 'equals' provided it makes the Tag fire in the context of this Client only, not too broad to overlap with other Clients you may have. The 'equals' rule is simple enough and works.
+
+Besides the trigger, this tag doesn't require any additional configuration, because all the set up is done on the Adsmurai Facebook Conversions API Client custom tag `Facebook CAPI client`. However, you can change the Facebook Graph's API version to be used, if you want or need to.
 
 ## Getting help
 
