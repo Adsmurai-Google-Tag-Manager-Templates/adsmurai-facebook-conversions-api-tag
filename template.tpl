@@ -14,7 +14,11 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "Adsmurai Facebook Conversions API Tag",
-  "categories": ["ADVERTISING", "CONVERSIONS", "REMARKETING"],
+  "categories": [
+    "ADVERTISING",
+    "CONVERSIONS",
+    "REMARKETING"
+  ],
   "brand": {
     "id": "brand_dummy",
     "displayName": "Adsmurai",
@@ -47,11 +51,19 @@ ___TEMPLATE_PARAMETERS___
       {
         "value": "v11.0",
         "displayValue": "v11.0"
+      },
+      {
+        "value": "v12.0",
+        "displayValue": "v12.0"
+      },
+      {
+        "value": "v13.0",
+        "displayValue": "v13.0"
       }
     ],
     "simpleValueType": true,
     "alwaysInSummary": true,
-    "defaultValue": "v11.0",
+    "defaultValue": "v13.0",
     "help": "Choose the Facebook API version. In case of doubt, use the default option."
   }
 ]
@@ -191,4 +203,6 @@ scenarios: []
 
 ___NOTES___
 
-Version 0.3
+Version 0.4
+
+
