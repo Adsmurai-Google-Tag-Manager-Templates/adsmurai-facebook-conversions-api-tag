@@ -13,12 +13,15 @@
 # limitations under the License.
 
 homepage: "https://www.adsmurai.com"
-documentation: "https://www.example.com/documentation"
+documentation: "https://github.com/Adsmurai-Google-Tag-Manager-Templates/adsmurai-facebook-conversions-api-tag"
 versions:
   # Latest version
+  - sha: b5f10318de5b36b9c43fd8ba07397247dccad373
+    changeNotes: v0.4
+      Update default Graph API version to v13.0
+  # Older versions
   - sha: 533fa1fbe8bda3360c512a9ca8c8fe81a251fcbe
     changeNotes: v0.3
       Add option to change Facebook's API version
-  # Older versions
   - sha: e6a0f00eda1d1111f8bda41bf3a499302a41462c
     changeNotes: Initial release (0.2)
